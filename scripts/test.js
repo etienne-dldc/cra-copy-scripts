@@ -40,7 +40,7 @@ argv.push(
   '--config',
   JSON.stringify(
     createJestConfig(
-      relativePath => path.resolve(__dirname, '..', relativePath),
+      relativePath => path.resolve(__dirname, '..', 'node_modules', 'react-scripts', relativePath),
       path.resolve(paths.appSrc, '..'),
       false
     )
